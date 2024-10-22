@@ -3,28 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>flex</title>
+  <title>grid</title>
   <style>
-    div {
-      background-color: blueviolet;
+    .grid-container {
+      display: grid;
+      grid-template-rows: repeat(2, 200px);
+      grid-template-columns:  repeat(3, 100px);
     }
-    .one {
-      float: left;
-      width: 25%;
-    }
-    .two {
-      float: left;
-      width: 25%;
-    }
-    .three {
-      float: left;
-      width: 40%;
+    .grid-item {
+      background-color: blue;
+      border: 5px solid gold;
     }
   </style>
 </head>
 <body>
-  <div class="one"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ab voluptatem nulla officiis assumenda iusto soluta officia. Rerum nostrum voluptates repellendus libero adipisci harum provident eveniet amet ex, explicabo accusamus sit sapiente vitae ipsa at ducimus dignissimos id unde a.</p></div>
-  <div class="two"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eos nulla id esse dignissimos quae explicabo natus optio inventore iste impedit illo facilis sed rem, labore, quia assumenda mollitia at?</p></div>
-  <div class="three"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi enim dolorum ducimus? Facere sed rerum eligendi minima nemo veritatis deserunt eos laboriosam veniam accusamus molestiae natus architecto expedita blanditiis consectetur, fugit eaque vel nulla vitae eius quo temporibus. Voluptates ipsam autem facilis veritatis iusto dolorum fugiat, ad sint sed, quidem itaque delectus sit iste voluptatibus quaerat.</p></div>
+  <div class="grid-container">
+    <grid class="grid-item">1</grid>
+    <grid class="grid-item">2</grid>
+    <grid class="grid-item">3</grid>
+    <grid class="grid-item">4</grid>
+  </div>
 </body>
 </html>
